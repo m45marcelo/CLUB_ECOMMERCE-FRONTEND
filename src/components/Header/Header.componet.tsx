@@ -1,6 +1,5 @@
 import { BsCart3 } from 'react-icons/bs';
 
-import './Header.styles.css'
 import { HeaderContainer, HeaderItem, HeaderItems, HeaderTitle } from './Header.styled';
 
 const Header = () =>{

@@ -5,7 +5,6 @@ import axios from "axios";
 import Category from "../../types/category.types";
 
 // Styles
-import "./Categories.styles.css";
 import CategoryItem from "../Category_Item/Category_Item.component";
 import { CategoriesContainer, CategoriesContent } from "./Category.styles";
 
