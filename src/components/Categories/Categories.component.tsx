@@ -7,6 +7,7 @@ import Category from "../../types/category.types";
 // Styles
 import "./Categories.styles.css";
 import CategoryItem from "../Category_Item/Category_Item.component";
+import { CategoriesContainer, CategoriesContent } from "./Category.styles";
 
 const Categories = () => {
     const [categories, setCategories] = useState<Category[]>([]);
@@ -30,15 +31,15 @@ const Categories = () => {
     }, []);
 
     return (
-        <div className="categories-container">
-            <div className="categories-content">
+        <CategoriesContainer>
+            <CategoriesContent>
                 {categories.map((category) => (
                     <div key={category.id}>
                         <CategoryItem category={category} />
                     </div>
                 ))}
-            </div>
-        </div>
+            </CategoriesContent>
+        </CategoriesContainer>
     );
 };
 
